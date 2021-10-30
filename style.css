@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+body {
+  direction: rtl;
+}
+::selection {
+    color: #e9e9e9;
+    background-color: darkcyan;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.back__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.card {
+  color: #fff;
+  background-color: rgba(126, 123, 135, 0.3);
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 15px;
+}
+.card__title {
+  padding: 30px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.form__group {
+  margin: 20px;
+  font-size: 20px;
+}
+.form__group .input {
+  padding: 10px 0;
+  display: block;
+  background-color: transparent;
+  width: 90%;
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  column-rule: #fff;
+  box-shadow: 0 1px 0 0 #fff;
+  transition: all 0.5s linear;
+}
+.form__group .input:focus,
+.form__group .input:valid {
+    outline: none; 
+    height: 60px;
+}
+
+
+
+
+
+.card .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.card .btn:focus {
+    outline: none;
+}
+.card .btn:hover {
+    background-color: #e9e9e9;
+}
+.card .btn:active {
+    position: relative;
+    top: 2px;
+}
+.card .forgot {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+.card .forgot:hover  {
+    text-decoration: underline;
+    cursor: pointer;
+}
